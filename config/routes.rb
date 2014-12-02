@@ -1,3 +1,6 @@
 Sernobi::Application.routes.draw do
-  root "application#hello"
+  get "welcome/index"
+  get "welcome/about"
+
+  root to: 'welcome#index'
 end
